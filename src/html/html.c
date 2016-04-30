@@ -4,7 +4,7 @@
 
 #include "html.h"
 
-const struct tab CTF_TAB = { "CTF", "/" };
+const struct tab DM_TAB = { "DM", "/" };
 const struct tab ABOUT_TAB = { "About", "/about.html" };
 struct tab CUSTOM_TAB = { NULL, NULL };
 
@@ -69,7 +69,7 @@ void html_header(const struct tab *active, char *title, char *search)
 		stdout);
 
 	const struct tab **tabs = (const struct tab*[]){
-		&CTF_TAB, &CUSTOM_TAB, &ABOUT_TAB, NULL
+		&DM_TAB, &CUSTOM_TAB, &ABOUT_TAB, NULL
 	};
 
 	for (; *tabs; tabs++) {

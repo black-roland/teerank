@@ -6,7 +6,7 @@
 struct tab {
 	char *name, *href;
 };
-extern const struct tab CTF_TAB, ABOUT_TAB;
+extern const struct tab DM_TAB, ABOUT_TAB;
 extern struct tab CUSTOM_TAB;
 
 void html_header(const struct tab *active, char *title, char *search);

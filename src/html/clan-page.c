@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 
 	/* Eventually, print them */
 	hexname_to_name(clan.name, clan_name);
-	html_header(&CTF_TAB, clan_name, NULL);
+	html_header(&DM_TAB, clan_name, NULL);
 	printf("<h2>%s</h2>\n", clan_name);
 
 	if (!missing_members)

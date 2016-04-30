@@ -74,8 +74,8 @@ int read_server_state(struct server_state *state, char *server_name)
 		}
 	}
 
-	/* Assume for now that only CTF games are ranked */
-	state->gametype = "CTF";
+	/* Assume for now that only DM games are ranked */
+	state->gametype = "DM";
 
 	fclose(file);
 	return 1;

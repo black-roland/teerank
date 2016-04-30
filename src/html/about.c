@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 		"<p>Report any bugs or ideas on <a href=\"https://github.com/needs/teerank/issues\">github issue tracker</a> or send them by e-mail at <a href=\"mailto:needs@mailoo.org\">needs@mailoo.org</a>.</p>"
 
 		"<h1>Under the hood</h1>"
-		"<p>Teerank works by polling CTF servers every 5 minutes.  Based on the score difference between two polls, it compute your score using a custom <a href=\"https://en.wikipedia.org/wiki/Elo_rating_system\">ELO rating system</a>.</p>"
+		"<p>Teerank works by polling DM servers every 5 minutes.  Based on the score difference between two polls, it compute your score using a custom <a href=\"https://en.wikipedia.org/wiki/Elo_rating_system\">ELO rating system</a>.</p>"
 		"<p>The system as it is cannot know the team you are playing on, it also do not handle any sort of player authentification, thus faking is easy.  That's why Teerank should not be taken too seriously, because it is built on a very naïve aproach.</p>"
 	);
 

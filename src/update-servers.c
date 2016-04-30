@@ -208,7 +208,7 @@ static int swap_server_state(
 	assert(server != NULL);
 	assert(old != NULL);
 	assert(new != NULL);
-	assert(!strcmp(new->gametype, "CTF"));
+	assert(!strcmp(new->gametype, "DM"));
 
 	if (!read_server_state(old, server->dirname))
 		return 0;
@@ -241,12 +241,12 @@ static void print_server_state_delta(
 
 	assert(old != NULL);
 	assert(new != NULL);
-	assert(!strcmp(new->gametype, "CTF"));
+	assert(!strcmp(new->gametype, "DM"));
 
 	/* A NULL gametype means empty old server states */
 	if (!old->gametype)
 		return;
-	assert(!strcmp(old->gametype, "CTF"));
+	assert(!strcmp(old->gametype, "DM"));
 
 	delta.elapsed = elapsed;
 	delta.length = 0;
@@ -296,7 +296,7 @@ static int handle_data(struct data *data, struct server *server)
 	if (!unpack_server_state(data, &new))
 		return 0;
 
-	if (strcmp(new.gametype, "CTF")) {
+	if (strcmp(new.gametype, "DM")) {
 		/*
 		 * We don't rank this server but we still want to check
 		 * it time to time to see if its gametype change.
